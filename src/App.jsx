@@ -1,9 +1,9 @@
 
-function App() {
+const App = () => {
  
 
   return (
-    <div className="">slm</div>
+    <div className="overflow-hidden">React app</div>
   )
 }
 
