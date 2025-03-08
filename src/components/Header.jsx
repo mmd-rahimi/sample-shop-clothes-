@@ -1,6 +1,9 @@
 const Header = () => {
     return(
-        <div>Header</div>
+        <div>
+            <div>Header</div>
+            <div>open/close sidebar</div>
+        </div>
     )
 }
 
