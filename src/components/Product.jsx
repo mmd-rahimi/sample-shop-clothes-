@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { BsEyeFill, BsPlus } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { CartContext } from "../contexts/CartContext";
 
 const Product = ({ product }) => {
-  console.log(product);
+
+  const {addToCart} = useContext(CartContext);
 
   const { id, image, title, category, price } = product;
   return (
@@ -24,7 +26,7 @@ const Product = ({ product }) => {
           className="absolute top-6 right-11 group-hover:right-5 flex flex-col justify-center 
         items-center gap-y-2 opacity-0 group-hover:opacity-100 p-2 transition-all duration-300"
         >
-          <button>
+          <button onClick={() => addToCart(product, id)}>
             <div className="flex justify-center items-center text-white h-12 w-12 bg-red-500">
               <BsPlus className="text-3xl" />
             </div>
