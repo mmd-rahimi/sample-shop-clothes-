@@ -27,7 +27,7 @@ const Product = ({ product }) => {
         items-center gap-y-2 opacity-0 group-hover:opacity-100 p-2 transition-all duration-300"
         >
           <button onClick={() => addToCart(product, id)}>
-            <div className="flex justify-center items-center text-white h-12 w-12 bg-red-500">
+            <div className="flex justify-center items-center text-white h-12 w-12 bg-red-500 cursor-pointer rounded">
               <BsPlus className="text-3xl" />
             </div>
           </button>
