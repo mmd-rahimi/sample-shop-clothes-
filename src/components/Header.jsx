@@ -21,7 +21,7 @@ const Header = () => {
         {/* Logo  */}
         <Link to={"/"}>
           <div>
-            <img className="w-[40px]" src="./public/vite.svg" />
+            <img className="w-[40px]" src="./public/logo.svg" />
           </div>
         </Link>
         {/* cart  */}
