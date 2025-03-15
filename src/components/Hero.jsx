@@ -5,8 +5,8 @@ const Hero = () => {
                 {/* text  */}
                 <div className="flex flex-col justify-center">
                     {/* title  */}
-                    <h1 className="text-[70px] leading-[1.1] font-light mb-4">AUTUMN SALE STYLISH <br />
-                    <span className="font-semibold">WOMENS</span>
+                    <h1 className="text-[70px] leading-[1.1] font-light mb-4">SHOP SALE STYLISH <br />
+                    <span className="font-semibold">WOMENS & <br />MENS</span>
                     </h1>
                 </div>
                 {/* image  */}

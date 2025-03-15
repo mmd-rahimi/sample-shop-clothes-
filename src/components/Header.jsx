@@ -3,6 +3,7 @@ import { SidebarContext } from "../contexts/SidebarContext";
 import { BsBag } from "react-icons/bs";
 import { CartContext } from "../contexts/CartContext";
 import { Link } from "react-router-dom";
+import { CiShop } from "react-icons/ci";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,7 +22,8 @@ const Header = () => {
         {/* Logo  */}
         <Link to={"/"}>
           <div>
-            <img className="w-[40px]" src="./public/logo.svg" />
+            {/* <img className="w-[40px]" src="./public/logo.svg" /> */}
+            <CiShop className="text-4xl font-bold"/>
           </div>
         </Link>
         {/* cart  */}

@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 
 const Product = ({ product }) => {
-
-  const {addToCart} = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
 
   const { id, image, title, category, price } = product;
   return (
@@ -17,7 +16,6 @@ const Product = ({ product }) => {
             <img
               className="max-h-[160px] group-hover:scale-110 transition duration-300"
               src={image}
-              alt=""
             />
           </div>
         </div>
@@ -39,15 +37,14 @@ const Product = ({ product }) => {
           </Link>
         </div>
       </div>
-      {/* category title price */};
+      {/* category title price */}
       <div>
         <div className="text-sm capitalize to-gray-500 mb-1">{category}</div>
         <Link to={`/product/${id}`}>
-        <h2 className="font-semibold mb1">{title}</h2>
+          <h2 className="font-semibold mb1">{title}</h2>
         </Link>
         <div className="font-semibold">$ {price}</div>
       </div>
-      ;
     </div>
   );
 };
