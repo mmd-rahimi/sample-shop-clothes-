@@ -14,6 +14,8 @@ const ProductProvider = ({children}) => {
             const respons = await fetch('https://fakestoreapi.com/products')
             const data = await respons.json()
             setProducts(data);
+            console.log(data);
+            
         };
         fetchProducts();
     }, [])
